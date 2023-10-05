@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+nav .nav-1 {
+  height: 60px;
+  background-color: #0f1111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  grid-gap: 20px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav .nav-1 a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 0;
+}
+nav .nav-1 a img {
+  text-align: center;
+  height: 50px;
+  width: 120px;
+  padding: 0;
+  margin-top: 10px;
+}
+nav .nav-1 .enviar {
+  margin-left: 17px;
+  font-size: 0.72rem;
+  color: gray;
+}
+nav .nav-1 .estilo_letra_bajo {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+nav .nav-1 .p_1 {
+  font-size: 0.72rem;
+}
+nav .nav-1 div.nav-buscador {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: 45px;
+  border: 0;
+}
+nav .nav-1 div.nav-buscador select {
+  border-radius: 7px 0px 0px 7px;
+  background-color: #f3f3f3;
+  border-right-color: #555555;
+  height: 46.6px;
+  margin-top: -0.6px;
+  width: 9%;
+  text-align: center;
+}
+nav .nav-1 div.nav-buscador select:hover {
+  background-color: #555555;
+}
+nav .nav-1 div.nav-buscador input {
+  padding: 0px;
+  width: 86%;
+  border: none;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}
+nav .nav-1 div.nav-buscador button {
+  background-color: #febd68;
+  padding: 10px 0px;
+  width: 5%;
+  border-radius: 0px 7px 7px 0px;
+  border: none;
+  font-size: 1.6rem;
+}
+nav .nav-1 .nav-cuenta {
+  width: 140px;
+}
+nav .nav-1 .nav-carrito {
+  width: 100px;
+  display: flex;
+  font-weight: 700;
+}
+nav .nav-1 .nav-carrito span {
+  margin-top: 19px;
+}
+nav .nav-1 .nav-carrito .bx-cart {
+  font-size: 45px;
+}
+nav .nav-2 {
+  color: white;
+  background-color: #232F3E;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: 20px 0px;
+  align-items: 0px 50px;
+}
+nav .nav-2 div {
+  margin-top: 3px;
+  width: auto;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+nav .nav-2 span {
+  color: white;
+}
+nav .nav-2 i {
+  font-size: 30px;
+  margin-top: -6px;
+  position: absolute;
+}
+nav .nav-2 .menu_abrir {
+  font-size: 15px;
+  margin-top: -20px;
+  margin-left: 28px;
+}
+nav .nav-2 menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .border {
+  border: 1.5px solid transparentize;
+}
+nav .border:hover {
+  border: 1.5px solid white;
+}
+
+main {
+  background-color: #E3E6E6;
+}
+main i.bx-chevron-left {
+  font-size: 100px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+main i.bx-chevron-right {
+  font-size: 100px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 1450px;
+}
+main .carrusel img {
+  width: 1500px;
+  display: block;
+  margin-left: 80px;
+  margin-right: 80px;
+  position: absolute;
+  margin-top: -19px;
+  z-index: -1;
+}
+main section {
+  margin-top: 200px;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+}
+main section .tarjetas_2 {
+  margin-top: 100px;
+  margin-left: 90px;
+  display: grid;
+  grid-template-columns: 350px 350px 350px 350px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+main section .tarjetas_2 .tarj {
+  border: 1px solid black;
+  width: 350px;
+  height: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */
