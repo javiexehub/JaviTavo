@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //funcion elegir numero aleatorio pc
+        function random (min, max){
+            return Math.floor(Math.random()*((max - min) + 1) + min)
+        }
+        // funcion mostra jugada elegida
+        function eleccion(jugada){
+                if (jugada== 1) {
+                    return "Piedra 🥌"
+                }
+                else if
+                (jugada==2){
+                    return"Papel🧻"
+                }
+                else if(jugada==3){
+                return"Tijera ✂"
+                }
+        }
+        // declaracion de variables
+        let usuario = "";
+        let pc =  0;
+        victorias = 0;
+        derrotas = 0;
+
+        //agregar un ciclo en el que jugaremos 3 veces con la pc y el mejor de 3 gana el juego total        
+        while (victorias < 3 && derrotas < 3) {
+            pc = random(1, 3);
+            // algoritmo de juego
+            usuario = prompt( "Elige entre 1 = Piedra, 2 = Papel o 3 = Tijera");
+            // si usuario esta dentro del rango de 1 y 3 ejecuta el codigo sino haz escrito mal tu respuesta
+            if (usuario >= 1 && usuario <=3){
+
+                alert("Has elegido "+eleccion(usuario) +" y Pc ha elegido " +eleccion(pc))
+
+                //COMBATE
+                if(usuario == pc){
+                    alert("has empatado gilipollas")
+                } 
+                else if (usuario == 3 && pc == 2 || usuario == 2 && pc == 1 || usuario == 1 && pc == 3){
+                    alert("has ganado gilipollas");
+                    victorias = victorias + 1
+                }
+                else {
+                    alert("has perdido gilipollas");
+                    derrotas = derrotas + 1
+                }
+            }
+            else {
+                alert ("has escrito mal tu respuesta")
+            }
+        }
+        alert("tus victorias fueron " + victorias + " y tus derrotas fueron " + derrotas)
+</script>
+</head>
+<body>
+    <H1>UWu</H1> 
+</body>
+</html>
